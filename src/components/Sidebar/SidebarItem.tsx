@@ -8,8 +8,12 @@ import SidebarDropdown from './SidebarDropdown';
 const SidebarItem = ({ item, pageName, setPageName }: any) => {
 
   const handleClick = () => {
-    const updatePageName = pageName !== item.label.toLowerCase() ? item.
-  }
+    // 
+    const updatePageName = pageName !== item.label.toLowerCase() ? item.label.toLowerCase() : '';
+    return setPageName(updatePageName);
+  };
+
+  const pathname = usePathname();
 
   return (
     <div>SidebarItem</div>

@@ -1,6 +1,8 @@
 'use client'; // to indicate that this code will run on the client side or browser
 
-import React from 'react'
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 
 const index = () => {
   return (

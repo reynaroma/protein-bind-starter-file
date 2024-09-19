@@ -32,6 +32,7 @@ const SidebarItem = ({ item, pageName, setPageName }: any) => {
           onClick={handleClick}
           className={`${isItemActive ? "rounded-md bg-graydark dark:bg-[#1e1e1e]"
             : ""
+            
             } group relative flex items-center gap-2.5 rounded-md px-4 py-2 text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-[#1e1e1e]`}
         >
           {item.icon}

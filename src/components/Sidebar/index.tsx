@@ -58,6 +58,7 @@ const menuGroups = [
 
 const Sidebar = ({ SidebarOpen, setSidebarOpen }): SidebarProps => {
   const pathname = usePathname();
+  
 }
 
 const index = () => {

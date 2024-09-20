@@ -3,7 +3,10 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { LayoutGrid, Atom, Network, Microscope, Settings, MessageSquareText, ChevronLeftIcon } from 'lucide-react';
+import { LayoutGrid, Atom, Network, Microscope, Settings, MessageSquareText, ChevronLeftIcon, SidebarOpen } from 'lucide-react';
+
+// components
+import SidebarItem from "./SidebarItem";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -43,7 +46,7 @@ const menuGroups = [
   },
   {
     name: "OTHERS",
-    menuItems:[
+    menuItems: [
       {
         icon: <Settings size={25} />,
         label: "Seetings",
@@ -53,8 +56,9 @@ const menuGroups = [
   }
 ];
 
-// components
-import SidebarItem from "./SidebarItem";
+const Sidebar = ({ SidebarOpen, setSidebarOpen }): SidebarProps => {
+  const pathname = usePathname();
+}
 
 const index = () => {
   return (

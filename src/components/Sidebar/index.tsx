@@ -41,6 +41,16 @@ const menuGroups = [
       },
     ],
   },
+  {
+    name: "OTHERS",
+    menuItems:[
+      {
+        icon: <Settings size={25} />,
+        label: "Seetings",
+        route: "/settings",
+      }
+    ]
+  }
 ];
 
 // components

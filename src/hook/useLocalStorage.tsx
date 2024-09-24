@@ -23,9 +23,12 @@ function useLocalStorage<T>(
   useEffect(() => {
     try {
       const valueToStore = typeof storedValue === 'function' ? storedValue(storedValue) : storedValue;
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
     }
     catch (error) {
-      
+
     }
   }, [])
 }

@@ -51,7 +51,7 @@ const menuGroups = [
     menuItems: [
       {
         icon: <Settings size={25} />,
-        label: "Seetings",
+        label: "Settings",
         route: "/settings",
       }
     ]

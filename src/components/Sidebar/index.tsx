@@ -66,7 +66,22 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
   return (
     <aside className={`fixed left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-hidden bg-black duration-300 ease-linear dark:bg-[#000000] lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
-      <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5"></div>
+      <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
+        <Link href={"/"}>
+          <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="ml-2 rounded-lg bg-[#3c4fe0] p-1">
+              <Image
+                width={32}
+                height={32}
+                src={"/public/images/logo/dna.svg"}
+                alt="logo"
+                priority
+              />
+            </div>
+            <p className="text-xl font-semibold text-white">ProteinBind</p>
+          </div>
+        </Link>
+      </div>
     </aside>
   )
 

@@ -73,7 +73,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <Image
                 width={32}
                 height={32}
-                src={"/public/images/logo/dna.svg"}
+                src={"/images/logo/dna.svg"}
                 alt="logo"
                 priority
               />

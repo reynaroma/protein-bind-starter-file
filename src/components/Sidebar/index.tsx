@@ -93,7 +93,24 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
       <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
         <nav className="mt-5 px-4 py-4 lg:mt-9 lg:px-6">
+          {menuGroups.map((group, index) => (
+            <div key={index}>
+              <h3 className="mb4 ml-4 text-sm font-semibold text-bodydark2">
+                {group.name}
+              </h3>
 
+              <ul className="mb6 flex flex-col gap-2">
+                {group.menuItems.map((menu, index) => (
+                  <SidebarItem
+                   key={index}
+                   item={menu}
+                   pageName={pageName}
+                   setPageName={setPageName}
+                  />
+                ))}
+              </ul>
+            </div>
+          ))}
         </nav>
       </div>
     </aside>

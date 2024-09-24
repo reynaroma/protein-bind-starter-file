@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { LayoutGrid, Atom, Network, Microscope, Settings, MessageSquareText, ChevronLeftIcon, SidebarOpen } from 'lucide-react';
+import { LayoutGrid, Atom, Network, Microscope, Settings, MessageSquareText, ChevronLeft, SidebarOpen } from 'lucide-react';
 
 // components
 import SidebarItem from "./SidebarItem";

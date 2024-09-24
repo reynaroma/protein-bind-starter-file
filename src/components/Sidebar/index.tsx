@@ -7,6 +7,8 @@ import { LayoutGrid, Atom, Network, Microscope, Settings, MessageSquareText, Che
 
 // components
 import SidebarItem from "./SidebarItem";
+import { useState } from "react";
+import useLocalStorage from "@/hook/useLocalStorage";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -57,8 +59,17 @@ const menuGroups = [
 ];
 
 const Sidebar = ({ SidebarOpen, setSidebarOpen }): SidebarProps => {
+
   const pathname = usePathname();
-  
+
+  const [pageName, setPageName] = useLocalStorage("selectedMenu", 'dashboard'); // Use useLocalStorage to store the page name
+
+  return (
+    <aside>
+
+    </aside>
+  )
+
 }
 
 const index = () => {

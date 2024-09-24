@@ -33,10 +33,4 @@ function useLocalStorage<T>(
   }, [key, storedValue]);
 }
 
-// const useLocalStorage = () => {
-//   return (
-//     <div>useLocalStorage</div>
-//   )
-// }
-
-// export default useLocalStorage
+export default useLocalStorage;

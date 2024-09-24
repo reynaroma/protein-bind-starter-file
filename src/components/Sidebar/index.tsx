@@ -62,7 +62,7 @@ const Sidebar = ({ SidebarOpen, setSidebarOpen }): SidebarProps => {
 
   const pathname = usePathname();
 
-  const [pageName, setPageName] = useLocalStorage("selectedMenu", 'dashboard'); // Use useLocalStorage to store the page name
+  const [pageName, setPageName] = useLocalStorage("selectedMenu", 'dashboard');
 
   return (
     <aside>

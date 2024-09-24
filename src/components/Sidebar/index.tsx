@@ -118,10 +118,4 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
 };
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
-
-export default index
+export default Sidebar;

@@ -87,8 +87,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           aria-controls="sidebar"
           className="block lg:hidden"
         >
-          <ChevronLeft  />
+          <ChevronLeft />
         </button>
+      </div>
+
+      <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
+        <nav className="mt-5 px-4 py-4 lg:mt-9 lg:px-6">
+
+        </nav>
       </div>
     </aside>
   )

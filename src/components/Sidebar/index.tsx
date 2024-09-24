@@ -81,6 +81,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             <p className="text-xl font-semibold text-white">ProteinBind</p>
           </div>
         </Link>
+        <button
+          type="button"
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-controls="sidebar"
+          className="block lg:hidden"
+        >
+          <ChevronLeft  />
+        </button>
       </div>
     </aside>
   )

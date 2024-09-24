@@ -2,14 +2,20 @@
 
 import React, { useState, useLayoutEffect } from 'react';
 
+// components
+import Sidebar from '../Sidebar';
+
 export default function DefaultLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className='flex'>
       {/* sidebar */}
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <div className='relative flex flex-1 flex-col lg:ml-72.5'>
         {/* headers */}
         <main>

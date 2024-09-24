@@ -58,19 +58,19 @@ const menuGroups = [
   }
 ];
 
-const Sidebar = ({ SidebarOpen, setSidebarOpen }): SidebarProps => {
+const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
   const pathname = usePathname();
 
   const [pageName, setPageName] = useLocalStorage("selectedMenu", 'dashboard');
 
   return (
-    <aside>
+    <aside className={`fixed left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-hidden bg-black duration-300 ease-linear dark:bg-[#000000] lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
     </aside>
   )
 
-}
+};
 
 const index = () => {
   return (

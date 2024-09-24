@@ -28,9 +28,9 @@ function useLocalStorage<T>(
       }
     }
     catch (error) {
-
+      console.log(error);
     }
-  }, [])
+  }, [key, storedValue]);
 }
 
 // const useLocalStorage = () => {

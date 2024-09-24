@@ -3,10 +3,37 @@ import { useEffect, useState } from "react";
 
 type SetValue<T> = T | ((val: T) => T);
 
-const useLocalStorage = () => {
-  return (
-    <div>useLocalStorage</div>
-  )
+function useLocalStorage<T>(
+  key: string,
+  initialValue: T,
+): [T, (value: SetValue<T>) => void] {
+  const [storedValue, setStoredValue] = useState<T>(() => {
+    try {
+      if (typeof window !== 'undefined') {
+        const item = window.localStorage.getItem(key);
+        return item ? JSON.parse(item) : initialValue;
+      }
+    }
+    catch (error) {
+      console.log(error);
+      return initialValue;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      const valueToStore = typeof storedValue === 'function' ? storedValue(storedValue) : storedValue;
+    }
+    catch (error) {
+      
+    }
+  }, [])
 }
 
-export default useLocalStorage
+// const useLocalStorage = () => {
+//   return (
+//     <div>useLocalStorage</div>
+//   )
+// }
+
+// export default useLocalStorage

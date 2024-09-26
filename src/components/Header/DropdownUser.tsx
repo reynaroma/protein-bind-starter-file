@@ -37,6 +37,7 @@ const DropdownUser = () => {
             }}
           />
         </span>
+        <ChevronDown />
       </Link>
     </div>
   )

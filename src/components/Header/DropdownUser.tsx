@@ -10,9 +10,15 @@ const DropdownUser = () => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const router = useRouter();
-  
+
   return (
-    <div>DropdownUser</div>
+    <div>
+      <Link
+        onClick={() => setDropdownOpen(!dropdownOpen)}
+        href={"#"}
+        className="flex items-center gap-4"
+      ></Link>
+    </div>
   )
 }
 

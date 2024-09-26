@@ -17,7 +17,14 @@ const DropdownUser = () => {
         onClick={() => setDropdownOpen(!dropdownOpen)}
         href={"#"}
         className="flex items-center gap-4"
-      ></Link>
+      >
+        <span className="hidden text-right lg:block">
+          <span className="block text-sm font-medium text-black dark:text-white">
+            {'John Doe'}
+          </span>
+          <span className="block text-xs">Drug Researcher</span>
+        </span>
+      </Link>
     </div>
   )
 }

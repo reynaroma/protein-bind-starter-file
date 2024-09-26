@@ -15,6 +15,7 @@ const DropdownMessage = () => {
         <span className={`absolute -right-0.5 -top-0.5 z-1 h-2 w-2 rounded-full bg-meta-1 ${notifying === false ? "hidden" : "inline"}`}>
           <span className="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-meta-1 opacity-75"></span>
         </span>
+        <MessageCircleMore size={20} />
       </Link>
     </li>
   )

@@ -24,6 +24,19 @@ const DropdownUser = () => {
           </span>
           <span className="block text-xs">Drug Researcher</span>
         </span>
+
+        <span className="h-11 w-11 rounded-full">
+          <Image
+            width={80}
+            height={80}
+            src='/images/user/user-01.png'
+            alt="user"
+            style={{
+              width: 'auto',
+              height: 'auto',
+            }}
+          />
+        </span>
       </Link>
     </div>
   )

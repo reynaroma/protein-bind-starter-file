@@ -5,3 +5,11 @@ import { ChevronDown, LogOut, Settings, User2 } from "lucide-react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+
+const DropdownUser = () => {
+  return (
+    <div>DropdownUser</div>
+  )
+}
+
+export default DropdownUser

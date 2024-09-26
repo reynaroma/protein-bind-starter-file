@@ -7,6 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const DropdownUser = () => {
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const router = useRouter();
+  
   return (
     <div>DropdownUser</div>
   )

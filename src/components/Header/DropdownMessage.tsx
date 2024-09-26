@@ -9,7 +9,6 @@ const DropdownMessage = () => {
   return (
     <li className="relative">
       <Link
-
         onClick={() => {
           setNotifying(!notifying);
           setNotifying(!false);

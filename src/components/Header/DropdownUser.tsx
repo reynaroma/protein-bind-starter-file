@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, LogOut, Settings, User2 } from "lucide-react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 

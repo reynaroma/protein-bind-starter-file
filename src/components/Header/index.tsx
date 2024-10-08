@@ -35,6 +35,23 @@ const Header = (props: {
           </span>
         </button>
       </div>
+
+      <div className="hidden sm:block">
+        <form action="">
+          <div>
+            <button>
+
+            </button>
+            <input type="text" />
+          </div>
+        </form>
+
+        <div>
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
     </header>
   )
 }

@@ -37,18 +37,21 @@ const Header = (props: {
       </div>
 
       <div className="hidden sm:block">
-        <form action="">
-          <div>
-            <button>
-
+        <form action="https://formbold.com/s/unique_form_id" method="POST">
+          <div className="relative">
+            <button className="absolute left-0 top-1/2 -translate-y-1/2">
+              <SearchIcon />
             </button>
-            <input type="text" />
+            <input
+              type="text"
+              placeholder="Type to search..."
+              className="w-full bg-transparent pl-9 font-medium focus:outline-none xl:w-125" />
           </div>
         </form>
 
         <div>
           <ul>
-            
+
           </ul>
         </div>
       </div>

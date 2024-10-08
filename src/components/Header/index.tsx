@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownMessage from "./DropdownMessage";
-import { SearchIcon } from "lucide-react";
+import { SearchIcon, SidebarOpen } from "lucide-react";
 import DropdownUser from "./DropdownUser";
 import Image from "next/image";
 import React from "react";
@@ -23,9 +23,8 @@ const Header = (props: {
         >
           <span className="relative block h-5.5 w-5.5 cursor-pointer">
             <span className="block absolute right-0 h-full w-full">
-              <span className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${!props.sidebarOpen && "!w-full delay-300"}`}>
-
-              </span>
+              <span className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${!props.sidebarOpen && "!w-full delay-300"}`}></span>
+              <span className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-150 duration-200 ease-in-out dark:bg-white ${!props.sidebarOpen && "delay-400 !w-full"}`}></span>
             </span>
           </span>
         </button>

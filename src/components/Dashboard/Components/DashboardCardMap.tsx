@@ -50,7 +50,12 @@ const MapOne: React.FC = () => {
   }, [])
 
   return (
-    <div>MapOne</div>
+    <div className='col-span-2 rounded-lg border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-[#181818] dark:bg-[#181818] xl:col-span-7'>
+      <h4>All over the world</h4>
+      <div className='h-90'>
+        <div id='mapOne' className='mapOne map-btn'></div>
+      </div>
+    </div>
   )
 }
 

@@ -6,6 +6,13 @@ import { AtomIcon, MessageCircle, Network, SearchIcon } from "lucide-react";
 // components
 import CTACard from "./Components/CTACard";
 
+const DashboardCardMap = dynamic(
+  () => import("@/components/Dashboard/Components/DashboardCardMap"),
+  {
+    ssr: false,
+  },
+);
+
 const Index = () => {
   return (
     <div>Index</div>

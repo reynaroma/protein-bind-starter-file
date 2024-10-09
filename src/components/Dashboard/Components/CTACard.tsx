@@ -9,7 +9,24 @@ interface CTACardProps {
 
 const CTACard: React.FC<CTACardProps> = ({ title, subtitle, children }) => {
   return (
-    <div>CTACard</div>
+    <div>
+      <div>
+        {children}
+      </div>
+      <div>
+        <div>
+          <h4>
+            {title}
+          </h4>
+          <span>{subtitle}</span>
+        </div>
+      </div>
+      <div>
+        <span>
+          <ArrowRight />
+        </span>
+      </div>
+    </div>
   )
 }
 

@@ -13,6 +13,13 @@ const DashboardCardMap = dynamic(
   },
 );
 
+const DashboardCardChat = dynamic(
+  () => import("@/components/Dashboard/Components/DashboardCardChat"),
+  {
+    ssr: false,
+  },
+);
+
 const Index = () => {
   return (
     <div>Index</div>
